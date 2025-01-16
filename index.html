@@ -4,18 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    link
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Urban Dwelling</title>
   </head>
-  <body></body>
+  <body>
+    <div class="bar-info">
+      <div class="container">
+        <div class="bar-info__links">
+          <a href="#">Доставка и оплата</a>
+          <a href="#">Гарантия и возврат</a>
+          <a href="#">EN</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-items">
+          <div class="header-items__logo">
+            <img src="./img/logo.svg" alt="logotype" />
+          </div>
+          <div class="header-items__menu">
+            <ul class="menu">
+              <li class="menu__item"><a href="#">КАТАЛОГ</a></li>
+              <li class="menu__item"><a href="#">О КОМПАНИИ</a></li>
+              <li class="menu__item"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+          <div class="header-items__button">
+            <div class="header-items__button__search">
+              <input type="text" placeholder="Лампы" />
+              <button>
+                <img src="./img/search.svg" alt="search-normal" />
+              </button>
+            </div>
+            <button class="header-items__button__bag">
+              <div class="bag-icon">
+                <img src="./img/bag.svg" alt="bag" />
+                <div class="bag-icon__count"><p>3</p></div>
+              </div>
+              Корзина
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>

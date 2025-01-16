@@ -1,0 +1,132 @@
+body {
+  font-family: "Lato";
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.bar-info {
+  width: 100%;
+  padding: 12px 0px;
+  background: #231815;
+}
+
+.bar-info__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 70px;
+}
+
+.bar-info__links a {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+/* стили для хедера */
+.header {
+  padding: 12px 0px;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-items__menu {
+  margin: 0 auto;
+}
+ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+li.menu__item a {
+  color: #231815;
+}
+
+.header-items__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.header-items__button__search {
+  padding: 7px 14px 7px 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border: 1px solid #F5F5F5;
+  border-radius: 100px;
+}
+.header-items__button__search input {
+  width: 109px;
+}
+
+.header-items__button__bag {
+  padding: 7.5px 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  background-color: #000000;
+  border-radius: 100px;
+  color: white;
+}
+.bag-icon {
+  position: relative;
+}
+.bag-icon img {
+  width: 18.67px;
+}
+.bag-icon__count {
+  position: absolute;
+  top: -4.5px;
+  right: -9px;
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+/********************/
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 1240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 680px;
+  }
+  .bar-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    width: 320px;
+  }
+  .bar-info {
+    display: none;
+  }
+  .header {
+    padding: 10px 0px;
+  }
+}
