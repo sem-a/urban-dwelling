@@ -108,6 +108,81 @@ li.menu__item a {
 
 /********************/
 
+/* main */
+
+.main {
+  padding: 60px 0px;
+}
+.main__title h2 {
+  font-family: "Korataki";
+  font-size: 44px;
+  line-height: 61.6px;
+  color: #231815;
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+}
+
+/* card */
+
+.card {
+  width: 320px;
+}
+.card__image {
+  width: 320px;
+  height: 477px;
+  position: relative;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.card__title {
+  padding: 20px 0px 12px 0px;
+}
+.card__title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: #231815;
+}
+.card__price p {
+  font-size: 22px;
+  line-height: 30.8px;
+  font-weight: 700;
+  color: #231815;
+}
+.__sale p {
+  color: #e45302;
+}
+.__sale span {
+  padding-left: 16px;
+  color: #808080;
+  text-decoration: line-through;
+}
+.card__image__sale-icon {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #231815;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  color: white;
+  padding: 8px 39.5px;
+  border-radius: 100px;
+}
+
+/***********************/
+
+/********************/
+
 @media screen and (max-width: 1600px) {
   .container {
     width: 1240px;
@@ -128,6 +203,22 @@ li.menu__item a {
   .header-items__button__search input {
     display: none;
   }
+
+  /* main */
+
+  .main__title h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  /* card */
+  .card {
+    width: 288px;
+  }
+  .card__image {
+    width: 288px;
+    height: 429px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -136,6 +227,12 @@ li.menu__item a {
   }
   .bar-info {
     display: none;
+  }
+  .header-items__logo {
+    width: 141px;
+  }
+  .header-items__logo img {
+    width: 100%;
   }
   .header-items__menu {
     display: none;
@@ -148,20 +245,41 @@ li.menu__item a {
     position: relative;
     width: 23px;
     height: 2px;
-    background-color: #0D0B26;
+    background-color: #0d0b26;
   }
-  .burger-menu::after, .burger-menu::before {
-    content: '';
+  .burger-menu::after,
+  .burger-menu::before {
+    content: "";
     position: absolute;
     width: 23px;
     height: 2px;
-    background-color: #0D0B26;
+    background-color: #0d0b26;
   }
   .burger-menu::after {
     top: 4px;
   }
   .burger-menu::before {
     top: -4px;
+  }
+
+  /* main */
+
+  .main {
+    padding: 50px 0px;
+  }
+
+  .main__title h2 {
+    font-size: 32px;
+    line-height: 44.8px;
+  }
+
+  /* card */
+  .card {
+    width: 320px;
+  }
+  .card__image {
+    width: 320px;
+    height: 477px;
   }
 }
 
@@ -174,5 +292,50 @@ li.menu__item a {
   }
   .header {
     padding: 10px 0px;
+  }
+
+  /* main */
+
+  .main {
+    padding: 40px 0px;
+  }
+  .main__title h2 {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+
+  /* card */
+
+  .card {
+    width: 155px;
+  }
+  .card__image {
+    width: 155px;
+    height: 230px;
+  }
+  .card__image img {
+    border-radius: 9.73px;
+  }
+  .card__title {
+    padding: 10px 0px 11px 0px;
+  }
+  .card__title h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+  }
+  .card__price p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .__sale span {
+    padding-left: 10px;
+  }
+  .card__image__sale-icon {
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 19.6px;
+    padding: 2px 14.5px;
   }
 }
