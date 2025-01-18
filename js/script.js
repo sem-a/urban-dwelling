@@ -89,6 +89,7 @@ products.forEach((product) => {
         : ""
     }
     <img src="${product.image}" alt="card-image" />
+    <div class="card__image__btn-details"><p>Подробнее</p></div>
   </div>
   <div class="card__title">
     <h3>${product.title}</h3>
