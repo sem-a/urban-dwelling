@@ -121,6 +121,7 @@ li.menu__item a {
 }
 
 .main__cards {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
@@ -210,6 +211,11 @@ li.menu__item a {
     font-size: 40px;
     line-height: 56px;
   }
+  .main__cards {
+    margin-top: 40px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }  
 
   /* card */
   .card {
@@ -267,11 +273,17 @@ li.menu__item a {
   .main {
     padding: 50px 0px;
   }
-
   .main__title h2 {
     font-size: 32px;
     line-height: 44.8px;
   }
+  .main__cards {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+  
 
   /* card */
   .card {
@@ -303,6 +315,12 @@ li.menu__item a {
     font-size: 24px;
     line-height: 33.6px;
   }
+  .main__cards {
+    margin-top: 24px;
+    column-gap: 10px;
+    row-gap: 30px;
+  }
+  
 
   /* card */
 
