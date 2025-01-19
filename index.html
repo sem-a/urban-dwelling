@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -82,57 +89,69 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__columns">
-          <div class="info__logo">
+
+          <div class="footer__columns__logo">
             <img src="./img/logowhite.png" alt="logotype" />
           </div>
-          <div class="info__text">
+
+          <div class="footer__columns__policy">
             <p>
               Этот сайт защищен от спама службой reCAPTCHA Google.
-              <a href="#"
-                >Политика конфиденциальности/Условия предоставления услуг</a
+              <span class="policy__link"
+                >Политика конфиденциальности/Условия предоставления услуг</span
               >
             </p>
           </div>
-          <div class="foooter__columns__address">
+
+          <div class="footer__columns__address">
             <div class="columns__title">
-              <p>Адрес</p>
+              <h3>Адрес</h3>
             </div>
-            <div class="contact__text"><p>Текст, Текст, Текст</p></div>
+            <div class="columns__text">
+              <p>Текст, Текст, Текст</p>
+            </div>
           </div>
-          <div class="contact__email">
+
+          <div class="footer__columns__contact">
             <div class="columns__title">
-              <p>Контакты</p>
+              <h3>Контакты</h3>
             </div>
-            <div class="contact__text">
+            <div class="columns__text">
               <p>Email: urban.dwelling@yandex.com</p>
             </div>
-            <div class="contact__text">
+            <div class="columns__text">
               <p>Телефон: 8 (999) 999-99-99</p>
             </div>
           </div>
+
           <div class="footer__columns__menu">
             <div class="columns__title">
-              <p>Услуги</p>
+              <h3>Услуги</h3>
             </div>
-            <div class="menu__list">
-              <a class="menu__list__link" href="#">Каталог</a>
-              <a class="menu__list__link" href="#">О компании</a>
-              <a class="menu__list__link" href="#">Контакты</a>
-              <a class="menu__list__link" href="#">Доставка и оплата</a>
-              <a class="menu__list__link" href="#">Гарантия и возврат</a>
+            <div class="columns__menu__list">
+              <a href="#" class="columns__menu__list__item">Каталог</a>
+              <a href="#" class="columns__menu__list__item">О компании</a>
+              <a href="#" class="columns__menu__list__item">Контакты</a>
+              <a href="#" class="columns__menu__list__item"
+                >Доставка и оплата</a
+              >
+              <a href="#" class="columns__menu__list__item"
+                >Гарантия и возврат</a
+              >
             </div>
           </div>
+
           <div class="footer__columns__documents">
-            <div class="documents__link"><a href="#">Публичная оферта</a></div>
-            <div class="documents__link">
-              <a href="#">Политика персональных данных</a>
-            </div>
+            <a href="#" class="documents__link">Публичная оферта</a>
+            <a href="#" class="documents__link">Политика персональных данных</a>
           </div>
-          <div class="documents__banks-icon">
+
+          <div class="footer__columns__banks-icon">
             <img src="./img/mir.svg" alt="mir" />
             <img src="./img/visa.svg" alt="visa" />
             <img src="./img/mastercard.svg" alt="mastercard" />
           </div>
+
         </div>
       </div>
     </footer>
