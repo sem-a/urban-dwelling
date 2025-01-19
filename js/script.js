@@ -107,3 +107,17 @@ products.forEach((product) => {
 
   cardsGrid.appendChild(card);
 });
+
+
+const burgerMenu = document.querySelector('.burger-menu');
+const sidebar = document.querySelector('.sidebar')
+const sidebarClose = document.querySelector('.sidebar__close');
+
+burgerMenu.addEventListener('click', () => {
+  sidebar.classList.add('open');
+})
+
+sidebarClose.addEventListener('click', () => {
+  sidebar.classList.remove('open')
+})
+
