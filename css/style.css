@@ -367,9 +367,33 @@ a.documents__link {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+    padding: 0 21px;
+  }
+  ul.menu {
+    gap: 21px;
+  }
+  .main__cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      column-gap: 20px;
+      row-gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card__image {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .container {
     width: 680px;
+    padding: 0;
   }
   .bar-info {
     display: none;
@@ -545,9 +569,92 @@ a.documents__link {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .container {
+    width: 100%;
+    padding: 0 14px;
+  }
+  .main__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.card {
+  width: 100%;
+}
+.card__image {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    height: auto;
+    padding: 40px 0;
+  }
+  .footer__columns {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 0 0;
+    grid-template-areas:
+      "logo"
+      "address"
+      "contact"
+      "footer-menu"
+      "documents"
+      "banks-icon"
+      "policy";
+  }
+  .footer__columns__logo {
+    grid-area: logo;
+    width: 180px;
+    margin-bottom: 34.23px;
+  }
+  .footer__columns__logo img {
+    width: 100%;
+  }
+  .footer__columns__policy {
+    grid-area: policy;
+    margin-top: 30px;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .footer__columns__address {
+    grid-area: address;
+  }
+  .footer__columns__contact {
+    grid-area: contact;
+    margin: 30px 0;
+  }
+  .footer__columns__menu {
+    grid-area: footer-menu;
+  }
+  .footer__columns__documents {
+    grid-area: documents;
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer__columns__banks-icon {
+    grid-area: banks-icon;
+    margin-top: 72px;
+  }
+  a.columns__menu__list__item {
+    margin-top: 20px;
+  }
+  .footer__columns__policy p {
+    width: 321px;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .container {
     width: 320px;
+    padding: 0;
   }
   .bar-info {
     display: none;
@@ -566,6 +673,7 @@ a.documents__link {
     line-height: 33.6px;
   }
   .main__cards {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 24px;
     column-gap: 10px;
     row-gap: 30px;
